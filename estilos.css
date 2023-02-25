@@ -1,0 +1,102 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+h1{
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 20px;
+}
+
+footer{
+    background-color: rgb(152, 152, 152);
+    color: white;
+    font-weight: bold;
+}
+
+table{
+    margin: 20px auto;
+    border: 1px;
+}
+
+.nav{
+    text-decoration: none;
+    color: rgb(6, 45, 174);
+    font-weight: bold;
+    margin: 20px
+}
+
+nav{
+    padding: 20px;
+}
+
+ol.myol{
+    display: inline-block;
+}
+
+#fieldset1{
+    background-color: rgb(216, 216, 216);
+}
+
+#fieldset2{
+    background-color: rgb(195, 195, 195);
+}
+
+#fieldset3{
+    background-color: rgb(154, 154, 154);
+}
+
+ol[type="intro-description"] {
+    background: rgba(173, 173, 173, 0.100);
+}
+
+.nav:hover{
+    text-decoration: underline;
+    color: rgb(125, 155, 255);
+    font-style: italic;
+}
+
+.nav:active{
+    text-decoration: none;
+    color: rgb(6, 186, 231);
+    font-style: italic;
+}
+
+.nav:link{
+    color: rgb(0, 37, 139);
+    font-style: italic;
+}
+
+.nav:visited{
+    color: rgb(23, 85, 255);
+    font-style: italic;
+}
+
+img{
+    border-radius: 20%;
+}
+
+p::first-letter{
+    color: black;
+}   
+
+
+li>a{
+    text-decoration: none;
+    color: rgb(29, 80, 249);
+    font-weight: bolder;
+}
+
+h1~h3{
+    font-weight: normal;
+}
+
+h2+img{
+    opacity: 0.8;
+}

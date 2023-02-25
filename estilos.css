@@ -1,102 +1,160 @@
-*{
+*{ /*UNIVERSAL*/
     font-family: "Montserrat", sans-serif;
     text-align: center;
 }
 
-body{
-    background-color: aliceblue;
+body{ /*CHANGE BODY BG*/
+    background-color: rgb(219, 238, 255);
+    margin: 0;
 }
 
-h1{
+h1{ /*CHANGE H1*/
     color: black;
     font-weight: bold;
     font-size: 45px;
     margin: 20px;
 }
 
-footer{
+footer{ /*FOOTER*/
     background-color: rgb(152, 152, 152);
     color: white;
     font-weight: bold;
+    padding: 40px;
 }
 
-table{
+table{ /*TABLE*/
     margin: 20px auto;
     border: 1px;
 }
 
-.nav{
+nav{ /*TIPO*/
+    padding: 20px;
+}
+
+img{ /*TIPO*/
+    border-radius: 20%;
+    border: 4px solid #ccc;
+}
+
+iframe {
+    border: 3px solid #999;
+}
+
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav{ /*CLASSE*/
     text-decoration: none;
     color: rgb(6, 45, 174);
     font-weight: bold;
     margin: 20px
 }
 
-nav{
-    padding: 20px;
-}
-
-ol.myol{
-    display: inline-block;
-}
-
-#fieldset1{
+#fieldset1{ /*ID*/
     background-color: rgb(216, 216, 216);
 }
 
-#fieldset2{
+#fieldset2{ /*ID*/
     background-color: rgb(195, 195, 195);
 }
 
-#fieldset3{
+#fieldset3{ /*ID*/
     background-color: rgb(154, 154, 154);
 }
 
-ol[type="intro-description"] {
-    background: rgba(173, 173, 173, 0.100);
+#location{
+    width: 900px;
+    margin: 30px auto;
 }
 
-.nav:hover{
-    text-decoration: underline;
-    color: rgb(125, 155, 255);
-    font-style: italic;
+ol.myol{ 
+    display: inline-block;
+    padding: 10px 20px 10px 40px;
 }
 
-.nav:active{
-    text-decoration: none;
-    color: rgb(6, 186, 231);
-    font-style: italic;
+.myol li{ /*SELETORES DESCENDENTES*/
+    text-align: left;
 }
 
-.nav:link{
+
+ol[type="intro-description"] { /*ATRIBUTO*/
+    background: rgba(173, 173, 173, 0.350);
+}
+
+.nav:link{ /*PSEUDO-CLASSE*/
     color: rgb(0, 37, 139);
-    font-style: italic;
+    font-style: normal;
 }
 
-.nav:visited{
+.nav:visited{ /*PSEUDO-CLASSE*/
     color: rgb(23, 85, 255);
     font-style: italic;
 }
 
-img{
-    border-radius: 20%;
+.nav:hover{ /*PSEUDO-CLASSE*/
+    text-decoration: underline;
+    color: rgb(125, 155, 255);
+    font-style: normal;
+    font-size: 20px;
 }
 
-p::first-letter{
-    color: black;
+.nav:active{ /*PSEUDO-CLASSE*/
+    text-decoration: none;
+    color: rgb(6, 186, 231);
+    font-style: normal;
+}
+
+.nav:hover::before{
+    content: "-> ";
+}
+
+.nav:hover::after{
+    content: " <-";
+}
+
+p::first-letter{ /*PSEUDO-ELEMENTO FIRST LETTER QUIZZ PAGE*/
+    color: rgb(0, 47, 255);
+    font-size: 20px;
+    font-weight: 600;
 }   
 
+p::first-line{ /*PSEUDO-ELEMENTO FIRST LINE QUIZZ PAGE*/
+    background-color: rgb(175, 255, 255);
+}   
 
-li>a{
+li>a{ /*SELETORES FILHOS*/
     text-decoration: none;
     color: rgb(29, 80, 249);
     font-weight: bolder;
 }
 
-h1~h3{
+h1~h3{ /*SELETORES ADJACENTES*/
     font-weight: normal;
 }
 
-h2+img{
+h2+img{ /*SELETORES IMEDIATAMENTE ADJACENTES*/
     opacity: 0.8;
+}
+
+/*COLORS FOR TABLE PAR*/
+tr:nth-child(even) {
+    background-color: #d1d1d1;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+[title~="River"] { /*SELETORES DE ATRIBUTOS PÁGINA QUIZ*/
+    border: 5px solid rgb(190, 190, 190);
+}
+
+
+input[type="image"]{
+    width: 2%;
 }

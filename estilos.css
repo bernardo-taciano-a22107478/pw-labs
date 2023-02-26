@@ -42,10 +42,14 @@ iframe {
 
 
 input {
-    display: block;
+    /*display: block;*/
     margin-bottom: 10px;
-    width: 100%;
+    /*width: 100%;*/
     padding: 10px;
+}
+
+th{
+    background-color: rgb(113, 229, 229);
 }
 
 .nav{ /*CLASSE*/
@@ -55,16 +59,24 @@ input {
     margin: 20px
 }
 
+.specific-title{
+    color: rgb(0, 59, 110);
+}
+
+.title{
+    color: rgb(23, 36, 179);
+}
+
 #fieldset1{ /*ID*/
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(180, 250, 253);
 }
 
 #fieldset2{ /*ID*/
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(98, 227, 249);
 }
 
 #fieldset3{ /*ID*/
-    background-color: rgb(154, 154, 154);
+    background-color: rgb(59, 170, 254);
 }
 
 #location{
@@ -159,6 +171,4 @@ tr:nth-child(odd) {
 }
 
 
-input[type="image"]{
-    width: 2%;
-}
+

@@ -18,7 +18,7 @@
 <body>
     <!-- HEADER SECTION -->
     <header>
-        <h1>Milan City Quizz</h1>
+        <h1 class="title">Milan City Quizz</h1>
         <figure>
             <img src="images/milanriver.jpg" alt="Milan River" title="Milan River">
             <figcaption>Fig.1 Milan River Po.</figcaption>
@@ -41,7 +41,7 @@
     <main>
         <!-- WHATS GOING TO HAPPEN IN THIS PAGE -->
         <section>
-            <h3>Quizz</h3>
+            <h3 class="specific-title">Quizz</h3>
             <p>
                 In this page you will be asked questions about the city of Milan in 
                 order to check your knowledge of the previously presented city.
@@ -66,38 +66,43 @@
 
                     <fieldset id="fieldset3">
                         <legend>Questions</legend>
-                        <label for="theater">What is the city of milan known for? (Fashion / History)</label> <!-- FASHION -->
+                        <h4>Q1: What is the city of milan known for? (Fashion / History)</h4>
                         <input type="text" name="theater">
                         
-                        <label for="archinaugurated">When was the Arch of Peace monument inaugurated?</label> <!-- September 10, 1838 -->
+                        <h4>Q2: When was the Arch of Peace monument inaugurated?</h4>
+                        <label for="archinaugurated"></label> <!-- September 10, 1838 -->
                         <input type="date" id="foundation" name="archinaugurated">
                         
-                        <label for="foundedBrand">What is the famous fashion brand that has its headquarters in Milan?</label>
-                        
+                        <h4>Q3: What is the famous fashion brand that has its headquarters in Milan?</h4>
                         <input type="checkbox" id="foundedBrand1" name="foundedBrand" value="Prada">
                         <label for="foundedBrand1">Prada</label>
-                        
                         <input type="checkbox" id="foundedBrand2" name="foundedBrand" value="Dior">
                         <label for="foundedBrand2">Dior</label>
                         <br>
-                        <label for="footballclub">What is the name of the famous football club based in Milan?</label>
-                        
+
+                        <h4>Q4: What is the name of the famous football club based in Milan?</h4>
                         <input type="radio"  id="footballclub1" name="foundedBrand" value="Prada">
                         <label for="footballclub1">AC Milan</label>
                         
                         <input type="radio" id="footballclub2" name="foundedBrand" value="Dior">
                         <label for="footballclub2">Juventus FC</label>
                         <br>
-                        <label for="colorMilan">What color is highlighted the most in the milan football symbol?</label>
+
+                        <h4>Q5: What color is highlighted the most in the milan football symbol?</h4>
                         <input type="color" id="colorMilan" name="colorMilan" value="#000000">
                         
-                        <label for="avgtemperature">What is the average summer temperature in Milan?</label>
+                        <br>
+
+                        <h4>Q6: What is the average summer temperature in Milan?</h4>
                         <input type="number" id="avgtemperature" name="avgtemperature" min="1" max="35">
                         
-                        <label for="avgmintemperature">What is the average winter temperature in Milan?</label>
+                        <br>
+                        <h4>Q7: What is the average winter temperature in Milan?</h4>
                         <input type="range" id="avgmintemperature" name="avgmintemperature" min="0" max="10">
                         
-                        <label for="cars">What is the name of the famous opera house in Milan?</label>
+                        <br>
+                        <h4>Q8: What is the name of the famous opera house in Milan?</h4>
+                        <label for="cars"></label>
                         <select name="operaHouse" id="operaHouse">
                             <option value="lascala">La Scala</option>
                             <option value="teatroregio">Teatro Regio</option>
@@ -105,7 +110,7 @@
                             <option value="teatrodellapergola">Teatro della Pergola</option>
                         </select>
                         <br>
-                        <label for="riverMilan">Which river runs through Milan?</label>
+                        <h4>Q9: Which river runs through Milan?</h4>
                         <input list="rivermilan" id="river-choice" name="river-choices">
 
                         <datalist id="rivermilan">
@@ -114,12 +119,18 @@
                             <option value="Po">
                             <option value="Adda">
                         </datalist>
-                        
-                        <label for="comment">Insert a comment</label>
+
+                        <br>
+                        <h4>Q10: Click in the Cathedral of Milan</h4>
+                        <input type="image" src="images/cathedral.jpg" alt="Submit">
+                    
+
+                        <br>
+                        <h4>Insert a comment</h4>
                         <textarea name="comment" id="textcomment" cols="30" rows="10" placeholder="Insert comment here"></textarea>
                         
-                        <input type="image" src="images/Send-PNG-Image-Background.png" alt="Submit">
                         
+                        <br>
                         Send Answers
                         <input type="submit" name="submitresult" id="submitresult">
                    </fieldset>
